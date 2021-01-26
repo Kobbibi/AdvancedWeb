@@ -3,7 +3,7 @@ try:
     connection = psycopg2.connect(user="webadmin",
                                     password="EYHmqn42316",
                                     host="10.100.2.33",
-                                    port="5432"
+                                    port="5432",
                                     # host="node8545-advweb-01.app.ruk-com.cloud",
                                     # port="11085",
                                     database="CloudDB")
