@@ -5,7 +5,7 @@ from flask_pymongo import MongoClient
 import datetime
 
 app = Flask(__name__)
-client = MongoClient('mongodb://admin:PNFfys59212@node9139-advweb-01.app.ruk-com.cloud:11122')
+client = MongoClient('mongodb://admin:PNFfys59212@node9139-advweb-01.app.ruk-com.cloud:27017')
 mydb = client['TestDBMongo']
 test = mydb['TestMongoNew']
 
