@@ -1,4 +1,4 @@
-from flask import Flask,request,redirect,url_for,render_template
+from flask import Flask,request,redirect,url_for,render_template,jsonify
 from flask import request
 from bson import json_util
 from flask_pymongo import MongoClient
@@ -76,7 +76,7 @@ def insert():
 # Web Root Hello
 @app.route('/', methods=['GET', 'POST'])
 def index():
-  return redirect(url_for('get_all'))
+  return jsonify({'ms': 'Hello Cloud DB1'})
 
 # Run Server
 if __name__ == "__main__":
