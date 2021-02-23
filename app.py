@@ -1,7 +1,8 @@
 from flask import Flask,request,redirect,url_for,render_template,jsonify
 from flask import request
 from bson import json_util
-from flask_pymongo import MongoClient
+# from flask_pymongo import MongoClient
+from pymongo import MongoClient
 import datetime
 
 app = Flask(__name__)
